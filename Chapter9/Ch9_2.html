@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>라디오 버튼과 이미지 출력</title>
+        <script>
+            function change_1()
+            {document.getElementById("a").src = "media/banana.jpg";}
+            function change_2()
+            {document.getElementById("a").src = "media/mango.jpg";}
+            function change_3()
+            {document.getElementById("a").src = "media/apple.jpg";}
+        </script>
+    </head>
+    <body>
+        <h3>라디오 버튼을 클릭하면 이미지를 출력합니다.</h3>
+        <hr>
+        <form>
+            <input type="radio" name="fruit" value="banana" onchange="change_1()">바나나
+            <input type="radio" name="fruit" value="mango" onchange="change_2()">망고
+            <input type="radio" name="fruit" value="apple" onchange="change_3()">사과
+            <img id="a" src="">
+        </form>
+    </body>
+</html>
