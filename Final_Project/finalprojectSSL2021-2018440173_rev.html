@@ -351,6 +351,8 @@
             return;
         }
 
+        color = color.toLowerCase();
+
         pos = new naver.maps.LatLng(lat, lng);
         
         var marker = new naver.maps.Marker({ //지도에 찍을 marker 생성
